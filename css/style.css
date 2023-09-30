@@ -618,9 +618,13 @@ p {
   /* Modal window  */
 
 .backdrop {
-  opacity: 0;
+  /* opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    pointer-events: none; */
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 
     top: 0;
     right: 0;
@@ -633,11 +637,18 @@ p {
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .backdrop.is-open {
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  
+  /* .backdrop.is-open {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
-  }
+  } */
 
   .modal {
     position: absolute;
